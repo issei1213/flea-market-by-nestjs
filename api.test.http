@@ -3,7 +3,6 @@ POST http://localhost:3000/items
 Content-Type: application/json
 
 {
-  "id": "test2",
   "name": "PC",
   "price": 50000,
   "description": "とても綺麗です"
@@ -15,7 +14,7 @@ Accept: application/json
 
 ###
 
-GET http://localhost:3000/items/test2
+GET http://localhost:3000/items/001a546e-8288-411d-bc94-9b0bd835584b
 Accept: application/json
 
 ###

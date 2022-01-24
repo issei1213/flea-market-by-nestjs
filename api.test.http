@@ -1,15 +1,18 @@
 
-POST http://localhost:3000/items
+#POST http://localhost:3000/items
+POST https://asia-northeast1-flea-market-fb770.cloudfunctions.net/api/items
+#POST http://localhost:5001/flea-market-fb770/asia-northeast1/api/items
 Content-Type: application/json
 
 {
-  "name": "PC",
+  "name": "TV",
   "price": 50000,
-  "description": "とても綺麗です"
+  "description": "汚いです"
 }
 
 ###
-GET http://localhost:3000/items
+#GET http://localhost:3000/items
+GET https://asia-northeast1-flea-market-fb770.cloudfunctions.net/api/items
 Accept: application/json
 
 ###

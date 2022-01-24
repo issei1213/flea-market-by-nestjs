@@ -18,8 +18,8 @@ export class ItemsController {
   }
 
   @Post()
-  create(@Body() createItemDto: CreateItemDto): Item {
-    return this.itemService.create(createItemDto)
+  async create(@Body() createItemDto: CreateItemDto): Promise<FirebaseFirestore.DocumentData> {
+    return await this.itemService.create(createItemDto)
   }
 
   @Patch(":id")
